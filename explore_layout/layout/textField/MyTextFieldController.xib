@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyTextFieldController" customModule="explore_layout" customModuleProvider="target">
+            <connections>
+                <outlet property="labelResult" destination="nH6-ux-uqZ" id="C7b-UQ-y6X"/>
+                <outlet property="textFieldOne" destination="51H-iJ-gac" id="vwu-M5-ZUo"/>
+                <outlet property="textFieldTwo" destination="2TT-3f-foO" id="4cf-iM-Md1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="51H-iJ-gac">
+                    <rect key="frame" x="16" y="121" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2TT-3f-foO">
+                    <rect key="frame" x="16" y="167" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCV-4G-boL">
+                    <rect key="frame" x="16" y="217" width="382" height="30"/>
+                    <state key="normal" title="Hitung"/>
+                    <connections>
+                        <action selector="onCount:" destination="-1" eventType="touchUpInside" id="vej-zc-RCI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perkalian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnT-xt-C1m">
+                    <rect key="frame" x="172" y="68" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nH6-ux-uqZ">
+                    <rect key="frame" x="186" y="255" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjk-Zb-1ED">
+                    <rect key="frame" x="16" y="308" width="382" height="30"/>
+                    <state key="normal" title="Another TextField"/>
+                    <connections>
+                        <action selector="onClickAnother:" destination="-1" eventType="touchUpInside" id="rUV-5D-pZg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="2TT-3f-foO" firstAttribute="top" secondItem="51H-iJ-gac" secondAttribute="bottom" constant="12" id="3wk-1i-Uu7"/>
+                <constraint firstItem="nH6-ux-uqZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8pF-CK-f7Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="51H-iJ-gac" secondAttribute="trailing" constant="16" id="Fs1-gO-iKQ"/>
+                <constraint firstItem="2TT-3f-foO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Mld-xK-GYX"/>
+                <constraint firstItem="51H-iJ-gac" firstAttribute="top" secondItem="pnT-xt-C1m" secondAttribute="bottom" constant="32" id="NXA-8b-OTx"/>
+                <constraint firstItem="bjk-Zb-1ED" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SP8-1S-zqz"/>
+                <constraint firstItem="rCV-4G-boL" firstAttribute="top" secondItem="2TT-3f-foO" secondAttribute="bottom" constant="16" id="Yp5-HS-WgD"/>
+                <constraint firstItem="nH6-ux-uqZ" firstAttribute="top" secondItem="rCV-4G-boL" secondAttribute="bottom" constant="8" id="Z95-w0-Kf0"/>
+                <constraint firstItem="pnT-xt-C1m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="bnl-dQ-jz5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2TT-3f-foO" secondAttribute="trailing" constant="16" id="cGl-DQ-dwf"/>
+                <constraint firstItem="pnT-xt-C1m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cgi-Zj-Qri"/>
+                <constraint firstItem="51H-iJ-gac" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fMZ-MZ-iiQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bjk-Zb-1ED" secondAttribute="trailing" constant="16" id="nwW-nZ-7jc"/>
+                <constraint firstItem="bjk-Zb-1ED" firstAttribute="top" secondItem="nH6-ux-uqZ" secondAttribute="bottom" constant="32" id="qBe-3l-82L"/>
+                <constraint firstItem="rCV-4G-boL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="seR-aR-Bge"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rCV-4G-boL" secondAttribute="trailing" constant="16" id="tUB-Ln-mzN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="113"/>
+        </view>
+    </objects>
+</document>
