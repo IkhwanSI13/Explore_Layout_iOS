@@ -31,13 +31,12 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="pEZ-pS-pPV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18.5" id="BlZ-4Z-tev"/>
                     <constraint firstAttribute="bottom" secondItem="oqu-k4-xrz" secondAttribute="bottom" constant="30.5" id="Pdz-7y-ftr"/>
                     <constraint firstItem="oqu-k4-xrz" firstAttribute="leading" secondItem="pEZ-pS-pPV" secondAttribute="trailing" constant="16" id="QzG-3K-Wbi"/>
+                    <constraint firstItem="pEZ-pS-pPV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="R2r-6p-ngc"/>
                     <constraint firstAttribute="trailing" secondItem="oqu-k4-xrz" secondAttribute="trailing" constant="16" id="XIm-90-jlh"/>
                     <constraint firstItem="oqu-k4-xrz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30.5" id="qzM-Oc-H7z"/>
                     <constraint firstItem="pEZ-pS-pPV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vdo-Qq-DcD"/>
-                    <constraint firstAttribute="bottom" secondItem="pEZ-pS-pPV" secondAttribute="bottom" constant="18.5" id="yhP-UQ-9Im"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

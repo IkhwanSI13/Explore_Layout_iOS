@@ -40,5 +40,10 @@ class MainController: UIViewController {
         self.navigationController?.pushViewController(intent, animated: true)
     }
 
-
+    @IBAction func onClickTabbar(_ sender: Any) {
+        //let intent = TabbarProgController(nibName: "tesViewController", bundle: nil)
+        //let intent = CiboViewController(nibName: "CiboViewController", bundle: nil)
+        self.navigationController?.pushViewController(UITabBarController(), animated: true)
+    }
+    
 }

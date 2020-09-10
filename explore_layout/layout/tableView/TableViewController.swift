@@ -90,11 +90,18 @@ class TableViewController: UIViewController {
         }
 
         func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+            //change to 0, to hide section
             return 40
         }
 
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            
+            if indexPath.section == 0 {
+                print(cardArray[indexPath.row])
+            } else if indexPath.section == 1 {
+                print(cardTypeTwoArray[indexPath.row])
+            }
         }
 
         func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {

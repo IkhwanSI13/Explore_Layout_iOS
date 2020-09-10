@@ -77,10 +77,24 @@
                         <action selector="onClickTableViewCustomCell:" destination="-1" eventType="touchUpInside" id="33Z-hb-r9l"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-TI-W7y">
+                    <rect key="frame" x="16" y="313" width="382" height="36"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="caR-mx-Hdf"/>
+                    </constraints>
+                    <state key="normal" title="Tabbar">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickTabbar:" destination="-1" eventType="touchUpInside" id="4SE-zs-HbR"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tPG-JQ-sxq" secondAttribute="trailing" constant="16" id="1F7-Ht-IEh"/>
+                <constraint firstItem="yAN-TI-W7y" firstAttribute="top" secondItem="Xcc-xn-Kn9" secondAttribute="bottom" constant="16" id="ByX-yj-7wT"/>
                 <constraint firstItem="A6f-Vq-GbO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="DdE-Lv-OAW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pJn-aM-RMj" secondAttribute="trailing" constant="16" id="Ffb-Ek-k8Z"/>
                 <constraint firstItem="A6f-Vq-GbO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GZI-ER-B5w"/>
@@ -90,10 +104,12 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sag-ea-Qra" secondAttribute="trailing" constant="16" id="b6z-6O-a0X"/>
                 <constraint firstItem="sag-ea-Qra" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="iRm-y5-Hc9"/>
                 <constraint firstItem="tPG-JQ-sxq" firstAttribute="top" secondItem="A6f-Vq-GbO" secondAttribute="bottom" constant="24" id="iof-Jz-IlY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yAN-TI-W7y" secondAttribute="trailing" constant="16" id="mse-bC-Taj"/>
                 <constraint firstItem="sag-ea-Qra" firstAttribute="top" secondItem="tPG-JQ-sxq" secondAttribute="bottom" constant="16" id="nKa-BG-B52"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xcc-xn-Kn9" secondAttribute="trailing" constant="16" id="vuh-ER-B0c"/>
                 <constraint firstItem="Xcc-xn-Kn9" firstAttribute="top" secondItem="pJn-aM-RMj" secondAttribute="bottom" constant="16" id="wzk-aL-EMU"/>
                 <constraint firstItem="Xcc-xn-Kn9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="zei-sO-B9j"/>
+                <constraint firstItem="yAN-TI-W7y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="zsd-eZ-86W"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="108.69565217391305" y="112.5"/>

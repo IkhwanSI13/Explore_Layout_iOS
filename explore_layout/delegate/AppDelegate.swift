@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tryController = TryController(collectionViewLayout: UICollectionViewFlowLayout())
         let mainController = MainController(nibName:"MainController", bundle:nil)
         window?.rootViewController = UINavigationController(rootViewController: mainController)
-        
+        //window?.rootViewController = TabbarProgController()
+
         return true
     }
 
