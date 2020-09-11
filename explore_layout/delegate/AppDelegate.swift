@@ -15,15 +15,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //ignore the storyboard
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible() //
         
-        let tryController = TryController(collectionViewLayout: UICollectionViewFlowLayout())
-        let mainController = MainController(nibName:"MainController", bundle:nil)
-        window?.rootViewController = UINavigationController(rootViewController: mainController)
-        //window?.rootViewController = TabbarProgController()
+        if #available(iOS 13, *) {
+            // do only pure app launch stuff, not interface stuff
+        } else {
+            //ignore the storyboard
 
+//            self.window = UIWindow()
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            //let vc = TryController(collectionViewLayout: UICollectionViewFlowLayout())
+//            let vc = MainController(nibName:"MainController", bundle:nil)
+//            self.window!.rootViewController = vc
+//            self.window!.makeKeyAndVisible()
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.makeKeyAndVisible() //
+            
+            let tryController = TryController(collectionViewLayout: UICollectionViewFlowLayout())
+            let mainController = MainController(nibName:"MainController", bundle:nil)
+            window?.rootViewController = UINavigationController(rootViewController: mainController)
+            //window?.rootViewController = TabbarProgController()
+        }
+
+        
         return true
     }
 

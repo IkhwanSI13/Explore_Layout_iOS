@@ -40,7 +40,9 @@ class TabbarProgController: UITabBarController {
         subViewController.append(menuOne!)
         subViewController.append(menuTwo!)
 
-        menuOne?.tabBarItem = UITabBarItem(title: "One", image: UIImage(named: "challenges"),tag: 0)
+//        menuOne?.tabBarItem = UITabBarItem(title: "One", image: UIImage(named: "challenges"),tag: 0)
+//        menuTwo?.tabBarItem = UITabBarItem(title: "Two", image: UIImage(named: "challenges"),tag: 1)
+        menuOne?.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         menuTwo?.tabBarItem = UITabBarItem(title: "Two", image: UIImage(named: "challenges"),tag: 1)
 
         self.setViewControllers(subViewController, animated: true)
